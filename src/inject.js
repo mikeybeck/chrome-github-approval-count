@@ -98,8 +98,8 @@ const checkPullRequestPage = async () => {
       <span class="text-small text-bold">${approvals[issueId]}</span>
     `
 
-    const element = document.querySelector(`#issue_${issueId} > div > div.col-3`)
-    const lastElement = document.querySelector(`#issue_${issueId} > div > div.col-3 > span.grid-col-4`)
+    const element = document.querySelector(`#issue_${issueId} > div > div.col-4`)
+    const lastElement = document.querySelector(`#issue_${issueId} > div > div.col-4 > span`)
     element.insertBefore(span, lastElement)
   })
 }
